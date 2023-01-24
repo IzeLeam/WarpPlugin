@@ -1,0 +1,7 @@
+name: WarpPlugin
+version: 1.0
+main: me.izeleam.Main
+api-version: 1.19
+commands:
+  warp:
+    description: Commande de gestion des warp. /warp help

@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.izeleam'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        name = 'spigotmc-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    maven {
+        name = 'sonatype'
+        url = 'https://oss.sonatype.org/content/groups/public/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.19.2-R0.1-SNAPSHOT'
+}
+
+sourceCompatibility = targetCompatibility = 17
+compileJava.options.encoding = 'UTF-8'
+setLibsDirName('../../Serveur19/server/plugins/')
+
